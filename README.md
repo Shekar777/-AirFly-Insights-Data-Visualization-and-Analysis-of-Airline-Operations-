@@ -4,33 +4,63 @@ Data Visualization and Analysis of Airline Operations
 📌 Project Overview
 Airfly Insights is a data analytics project focused on analyzing airline flight operations to identify patterns in delays, routes, and operational performance using historical flight data.
 
-This is the PR for completing Milestone 1 of the AirFly Insights project.
+📌 Milestone 1: Data Understanding, Cleaning & Feature Engineering
+✅ Tasks Completed
+1️. Data Understanding
 
-🎯 Objectives
-Clean and preprocess airline flight data
+Explored the airline flights dataset to understand structure and data types
 
-Handle missing and inconsistent values
+Identified key operational columns such as departure delay, arrival delay, route, and time attributes
 
-Create derived features for better analysis
+Analyzed the presence and impact of missing values
 
-Analyze delay trends across time, routes, and distances
+2️. Data Cleaning
 
-Support insights through data visualization
+Identified rows with null values in critical delay and time columns
 
-🛠️ Tools & Technologies
-Python
+Removed records with missing values in:
 
-Pandas, NumPy
+dep_delay
 
-Google Colab
+arr_delay
 
-GitHub
+dep_time
 
-📊 Key Features
-Null value handling for delay-related columns
+arr_time
 
-Feature engineering (Hour, Day of Week, Route, Delay Severity)
+Retained non-critical columns (e.g., tailnum) where nulls did not affect analysis
 
-Analysis-ready preprocessed dataset
+Ensured dataset consistency and reliability for downstream analysis
 
-Reusable and well-structured notebook
+3. Feature Engineering
+
+Created meaningful derived columns to support airline operations analysis:
+
+Flight Date – Combined year, month, and day into a datetime column
+
+Month – Extracted for seasonal trend analysis
+
+Day of Week – Derived to analyze weekday vs weekend patterns
+
+Hour – Extracted from scheduled departure time to study congestion trends
+
+Route – Created using origin and destination airports
+
+Delay Severity – Categorized using arrival delay values
+
+Is Weekend – Flag created to identify weekend vs weekday flights
+
+Departure Period – Categorized departure times into time-of-day buckets
+(Night, Morning, Afternoon, Evening, Late Night)
+
+Departure Delay Flag – Identifies whether a flight departed on time or was delayed
+
+Arrival Delay Flag – Identifies whether a flight arrived on time or was delayed
+
+Distance Category – Classified flights into Short, Medium, and Long distances
+
+4. Preprocessed Data Storage
+
+Saved the cleaned and feature-engineered dataset as a separate file
+
+Enabled fast reuse without repeating preprocessing steps
