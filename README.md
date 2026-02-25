@@ -10,9 +10,7 @@ Airfly Insights is a data analytics project focused on analyzing airline flight 
 1️. Data Understanding
 
       Explored the airline flights dataset to understand structure and data types
-
       Identified key operational columns such as departure delay, arrival delay, route, and time attributes
-
       Analyzed the presence and impact of missing values
 
 2️. Data Cleaning
