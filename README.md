@@ -16,7 +16,6 @@ Airfly Insights is a data analytics project focused on analyzing airline flight 
 2️. Data Cleaning
 
       Identified rows with null values in critical delay and time columns
-
       Removed records with missing values in:
 
       dep_delay,
