@@ -21,3 +21,20 @@ Dataset: https://www.kaggle.com/datasets/mahoora00135/flights
        Removed records with missing values in: dep_delay,arr_delay,dep_time,arr_time
        Retained non-critical columns (e.g., tailnum) where nulls did not affect analysis.
        Ensured dataset consistency and reliability for downstream analysis.
+3. Feature Engineering:
+   
+        Created meaningful derived columns to support airline operations analysis:
+        Flight Date – Combined year, month, and day into a datetime column
+        Month – Extracted for seasonal trend analysis
+        Day of Week – Derived to analyze weekday vs weekend patterns
+        Hour – Extracted from scheduled departure time to study congestion trends
+        Route – Created using origin and destination airports
+        Delay Severity – Categorized using arrival delay values
+        Is Weekend – Flag created to identify weekend vs weekday flights
+        Departure Period – Categorized departure times into time-of-day buckets
+                           (Night, Morning, Afternoon, Evening, Late Night)
+        Departure Delay Flag – Identifies whether a flight departed on time or was delayed
+        Arrival Delay Flag – Identifies whether a flight arrived on time or was delayed
+        Distance Category – Classified flights into Short, Medium, and Long distances
+
+ 
