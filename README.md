@@ -11,7 +11,7 @@ Dataset: https://www.kaggle.com/datasets/mahoora00135/flights
 
 1️. Data Understanding
       Explored the airline flights dataset to understand structure and data types.
-      
+	
       Identified key operational columns such as departure delay, arrival delay, route, and time attributes.
       
       Analyzed the presence and impact of missing values.
