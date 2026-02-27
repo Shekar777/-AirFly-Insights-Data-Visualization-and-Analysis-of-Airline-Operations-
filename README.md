@@ -37,4 +37,6 @@ Dataset: https://www.kaggle.com/datasets/mahoora00135/flights
         Arrival Delay Flag – Identifies whether a flight arrived on time or was delayed
         Distance Category – Classified flights into Short, Medium, and Long distances
 
- 
+4. Cleaned Dataset:
+
+        Saved the cleaned and feature-engineered dataset as a separate file Enabled fast reuse without repeating                 preprocessing steps
